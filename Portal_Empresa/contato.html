@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - GlobalWear</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: #f2f6fa;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #145da0;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            width: 90%;
+            margin: 20px auto;
+        }
+
+        section {
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        aside {
+            background-color: #eef5fb;
+            padding: 15px;
+        }
+
+        h1, h2, h3 {
+            color: #145da0;
+        }
+
+        header h1 {
+            color: white;
+        }
+
+        input, select, textarea {
+            padding: 6px;
+            margin-top: 5px;
+        }
+
+        button {
+            background-color: #145da0;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+        }
+
+        button a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GlobalWear</h1>
+
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="sobre.html">Sobre Nós</a>
+            <a href="servicos.html">Serviços</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Fale Conosco!</h1>
+
+            <article>
+                <p>
+                    Para voltar a página inicial, clique
+                    <em>
+                        <button>
+                            <a href="index.html">Voltar</a>
+                        </button>
+                    </em>
+                </p>
+
+                <h2>Cadastro de Pedidos</h2>
+
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                    <br><br>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    <br><br>
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" required>
+                    <br><br>
+
+                    <label for="tamanho">Tamanho da camisa:</label>
+                    <select id="tamanho" name="tamanho" required>
+                        <option value="">Selecione o tamanho</option>
+                        <option value="P">P</option>
+                        <option value="M">M</option>
+                        <option value="G">G</option>
+                        <option value="GG">GG</option>
+                    </select>
+                    <br><br>
+
+                    <label for="modelo">Modelo da camisa:</label>
+                    <select id="modelo" name="modelo" required>
+                        <option value="">Selecione o modelo</option>
+                        <option value="alemanha">Alemanha</option>
+                        <option value="brasil">Brasil</option>
+                        <option value="caboverde">Cabo Verde</option>
+                        <option value="costadomarfim">Costa do Marfim</option>
+                        <option value="espanha">Espanha</option>
+                        <option value="franca">França</option>
+                        <option value="holanda">Holanda</option>
+                        <option value="mexico">México</option>
+                    </select>
+                    <br><br>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <br>
+                    <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" rows="5" cols="40" required></textarea>
+                    <br><br>
+
+                    <button type="submit">Enviar pedido</button>
+                </form>
+            </article>
+        </section>
+
+        <aside>
+            <section>
+                <h2>Dados de Contato</h2>
+
+                <p>
+                    <strong>E-mail:</strong>
+                    contato@globalwear.com
+                </p>
+
+                <p>
+                    <strong>Telefone:</strong>
+                    (19) 99999-9999
+                </p>
+
+                <p>
+                    <strong>Endereço:</strong>
+                    Americana - SP
+                </p>
+            </section>
+
+            <section>
+                <h2>Horário de Atendimento</h2>
+
+                <p>
+                    <strong>Segunda a sexta-feira:</strong>
+                    08:00 às 18:00
+                </p>
+
+                <p>
+                    <strong>Sábado:</strong>
+                    09:00 às 17:00
+                </p>
+
+                <p>
+                    <strong>Domingo:</strong>
+                    Fechado
+                </p>
+            </section>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 GlobalWear - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
